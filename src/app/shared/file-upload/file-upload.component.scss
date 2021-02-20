@@ -1,0 +1,30 @@
+
+.error{ color: #f00; }
+.drag-area{
+    font-size: 12px;
+    //border: 2px solid #bbb; 
+    padding: 20px ;
+    background-color: #fff;
+    color: #bbb;
+}
+.drop-area{
+    font-size: 12px;
+    border: 2px dashed #bbb; 
+    padding: 20px ;
+    background-color: rgb(192, 211, 176);
+    color: #aaa;
+}
+
+.kapp-file-uploader {
+    width: 100%;
+    border: dotted;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+}
+// #upload_button {
+//     display: inline-block;
+//   }
+//   #upload_button input[type=file] {
+//     display:none;
+//   }

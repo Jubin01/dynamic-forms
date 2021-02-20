@@ -1,0 +1,29 @@
+// .k-widget, .k-window-content{
+// background-color: #fff ;// #00695C
+// background-image: none !important; 
+// }
+
+.lookup-icon{
+    cursor: pointer;
+    font-size: 16px;
+    height: 0px;
+    width: 29px;
+    line-height: 0.5;
+}
+
+.title{
+  margin:15px 15px 0px 15px;font-weight: bold;font-size: medium;
+}
+.lookup-error{
+  width: 13em;
+  line-height: 0.5;
+}
+.border-style{
+    border-right-style: solid;
+  border-right-color: coral;
+}
+
+// to adjust lookup window inside mat tabs
+.k-window{
+  position: fixed !important;
+}

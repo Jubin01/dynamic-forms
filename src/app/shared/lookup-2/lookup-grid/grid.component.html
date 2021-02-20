@@ -1,0 +1,43 @@
+<!-- <kendo-grid [data]="records"
+            [pageSize]="state.take"
+            [skip]="state.skip"
+            [sort]="state.sort"
+            [sortable]="true"
+            [pageable]="{
+                buttonCount: 3,
+                info:false
+              }"
+            [scrollable]="'scrollable'"
+            [groupable]="false"
+            [group]="state.group"
+            [filterable]="true"
+            [filter]="state.filter"
+            (dataStateChange)="dataStateChange($event)"
+            [selectable]="true"
+            (selectionChange)="gridUserSelectionChange($event)"
+            [kendoGridSelectBy]="'id'"
+            [selectedKeys]="mySelection"
+            (dblclick)='onDblClick($event)'
+            [height]="400"
+          >
+         <kendo-grid-column *ngFor="let field of lookupModel.displayFields" field={{field.field}} title={{field.title}}>
+
+          <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+            <div #filterElement *ngIf="field.filter === undefined">
+              <div attr.id="{{field.field}}">
+              <kendo-grid-string-filter-cell #stringFilterElement [column]="column" [filter]="filter">
+               </kendo-grid-string-filter-cell>
+              </div>
+            
+            </div>
+           <div *ngIf="field.filter === 'numeric'">
+             <div attr.id="{{field.field}}">
+              <kendo-grid-numeric-filter-cell [column]="column" [filter]="filter">
+              </kendo-grid-numeric-filter-cell>
+             </div>
+           
+            </div>
+          </ng-template>
+
+        </kendo-grid-column>
+</kendo-grid> -->

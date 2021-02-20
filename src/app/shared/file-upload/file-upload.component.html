@@ -1,0 +1,36 @@
+<div fxLayout="row" fxLayoutAlign="center">
+     <button type="button" mat-raised-button color="accent" matTooltip="Choose Files" (click)="file.click()"> <mat-icon> attach_file</mat-icon></button>
+     <input type="file" #file [multiple]="(maxFiles > 1)" (click)="file.value=''" (change)="onFileChange($event)" style="display: none;"/>     
+</div>
+
+<div class="row error" *ngIf="errors.length > 0">
+    <ul>
+        <li *ngFor="let err of errors">{{err}}</li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+<!-- <div draggable="true" ngClass="{{dragAreaClass}}"> -->
+    <!-- <div>
+    <div class="row">
+        <div style="padding: 0 0 2% 30%;" >
+             <a class="link-color" href="javascript:void(0)" (click)="file.click()">
+                Click to browse
+            </a>
+            Or Drag & Drop to upload your files 
+            <button  (click)="file.click()">Choose File</button>
+            <input type="file" #file [multiple]="(maxFiles > 1)" (click)="file.value=''" (change)="onFileChange($event)" style="display: none;"/>
+        </div>
+    </div>
+
+</div>
+<div class="row error" *ngIf="errors.length > 0">
+    <ul>
+        <li *ngFor="let err of errors">{{err}}</li>
+    </ul>
+</div> -->
