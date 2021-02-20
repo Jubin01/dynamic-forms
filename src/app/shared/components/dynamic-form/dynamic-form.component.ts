@@ -19,7 +19,7 @@ import { FieldConfig, FormConfig, TabConfig } from "../field.interface";
   template: `
   <form class="dynamic-form" [formGroup]="form" (submit)="onSubmit($event)">
   <div fxLayout="row" class="popup-header-2">
-  <div fxFlex="87%">
+  <div fxFlex="86%">
     <h3 class="popup-header-text">{{formConfig.title}}</h3>
   </div>
   <div class="popup-icon-div">

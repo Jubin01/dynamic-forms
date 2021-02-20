@@ -11,7 +11,7 @@ import { AddComponent } from './add/add.component';
 export class AppComponent {
   constructor(private dialog: MatDialog){}
   onButtonClick(){
-    const dialogRef = this.dialog.open(AddComponent);
+    const dialogRef = this.dialog.open(AddComponent, { data: {'selectedRow': {}, 'type':'add'}});
 
   }
 }
