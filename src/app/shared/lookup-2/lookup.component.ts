@@ -28,7 +28,7 @@ export class LookupComponent2 implements OnInit, OnDestroy {
     statusSub: Subscription;
     dataName: string;
 //    public settings: Settings;
-    //typingTimer: NodeJS.Timeout;
+    // typingTimer: NodeJS.Timeout;
     isDisable: boolean;
     lookupWidth: string;
     constructor(private dialog: MatDialog, private dataService: LookupGridDataService2) {

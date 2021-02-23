@@ -15,7 +15,7 @@
 <!-- </div> -->
 
 
-<!-- <div class="k-overlay" *ngIf="opened"></div>
+<div class="k-overlay" *ngIf="opened"></div>
 <kendo-window [width]="lookupWidth"  
       *ngIf="opened" 
       [draggable]="true"
@@ -24,14 +24,14 @@
      <div style="width: 95%">
       {{lookupModel.title}}
      </div>
-    <button class="k-button" mat-raised-button color="primary" (click)="onOkClick()">
+    <button mat-raised-button color="primary" (click)="onOkClick()">
       <mat-icon>done</mat-icon>
     </button>
-    <button class="k-button" mat-raised-button color="primary" (click)="onClose()">
+    <button mat-raised-button color="primary" (click)="onClose()">
       <mat-icon>close</mat-icon>
     </button>
   </kendo-window-titlebar>
   <app-lookup-grid-2 [lookupModel]="lookupModel" [filter]="filter" (gridRowDblClick)='onDblClick($event)'
     (selectedData)='onRowClick($event)'>
   </app-lookup-grid-2>
-</kendo-window> -->
+</kendo-window>

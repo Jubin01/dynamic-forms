@@ -8,12 +8,9 @@ import { FieldConfig } from '../shared/components/field.interface';
 })
 export class AddConfigService {
     fieldConfig: FieldConfig[];
-    reasonObj: any;
     data: any;
     lookupFamilyModel: Lookup;
     getConfig = (data: any) => {
-        this.reasonObj = data.selectedRow;
-        this.data = data;
 
         this.lookupFamilyModel = {
             title: "Select the Family",
@@ -26,8 +23,8 @@ export class AddConfigService {
             returnFields: ['id', 'name', 'description'],
             height: '400',
             width: '450',
-            dataId: this.reasonObj.familyId,
-            textValue: this.reasonObj.familyName,
+            // dataId: this.reasonObj.familyId,
+            // textValue: this.reasonObj.familyName,
             labelText: 'Family Name',
             placeholderText: 'Enter Family Name',
         };
@@ -38,7 +35,7 @@ export class AddConfigService {
                 label: "Name",
                 inputType: "text",
                 name: "name",
-                value: this.reasonObj.name,
+              //  value: this.reasonObj.name,
                 validations: [
                     {
                         name: "required",
@@ -57,7 +54,7 @@ export class AddConfigService {
                 label: "Description",
                 inputType: "text",
                 name: "description",
-                value: this.reasonObj.description,
+              //  value: this.reasonObj.description,
                 validations: [
                     {
                         name: "required",
@@ -81,7 +78,7 @@ export class AddConfigService {
                 label: "Order BY",
                 inputType: "number",
                 name: "orderBy",
-                value: this.reasonObj.orderBy,
+               // value: this.reasonObj.orderBy,
                 validations: [
                     {
                         name: "maxlength",

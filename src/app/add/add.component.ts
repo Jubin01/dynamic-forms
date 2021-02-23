@@ -1,7 +1,5 @@
-import { Component, Inject, ViewChild } from '@angular/core';
-import { Validators } from '@angular/forms';
+import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { DynamicFormComponent } from '../shared/components/dynamic-form/dynamic-form.component';
 import { FieldConfig, FormConfig } from '../shared/components/field.interface';
 import { AddConfigService } from './add-config.service';
 

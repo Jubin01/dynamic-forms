@@ -36,7 +36,7 @@ export class LookupGridDataService2 {
       .pipe(map(({ data, total/*, aggregateResults*/ }: GridDataResult) => // Process the response
         (<GridDataResult>{
           // If there are groups, convert them to a compatible format
-          data: hasGroups ? translateDataSourceResultGroups(data) : data,
+          data: hasGroups ? translateDataSourceResultGroups(data) : [],
           total: total,
           // Convert the aggregates if such exist
           //aggregateResult: translateAggregateResults(aggregateResults)
@@ -57,8 +57,8 @@ export class LookupGridDataService2 {
       .pipe(map(({ data, total/*, aggregateResults*/ }: GridDataResult) => // Process the response
         (<GridDataResult>{
           // If there are groups, convert them to a compatible format
-          data: hasGroups ? translateDataSourceResultGroups(data) : data,
-          total: total,
+          data: hasGroups ? translateDataSourceResultGroups(data) : [],
+          total: 0,
           // Convert the aggregates if such exist
           //aggregateResult: translateAggregateResults(aggregateResults)
         })

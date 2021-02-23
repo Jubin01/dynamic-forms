@@ -17,8 +17,7 @@ import { LookupComponent2 } from './lookup-2/lookup.component';
 import { LookupGridComponent2 } from './lookup-2/lookup-grid/grid.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { WindowModule } from '@progress/kendo-angular-dialog';
-
-
+import { GridModule } from '@progress/kendo-angular-grid';
 
 @NgModule({
   declarations: [
@@ -43,8 +42,9 @@ import { WindowModule } from '@progress/kendo-angular-dialog';
     ReactiveFormsModule,
     FormsModule,
     MaterialModule,
+    GridModule,
     WindowModule
-  ],
+    ],
   exports: [DynamicFormComponent],
   entryComponents: [
     InputComponent,

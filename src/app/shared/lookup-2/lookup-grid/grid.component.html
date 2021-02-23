@@ -1,4 +1,4 @@
-<!-- <kendo-grid [data]="records"
+<kendo-grid [data]="records"
             [pageSize]="state.take"
             [skip]="state.skip"
             [sort]="state.sort"
@@ -22,7 +22,7 @@
           >
          <kendo-grid-column *ngFor="let field of lookupModel.displayFields" field={{field.field}} title={{field.title}}>
 
-          <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
+          <!-- <ng-template kendoGridFilterCellTemplate let-filter let-column="column">
             <div #filterElement *ngIf="field.filter === undefined">
               <div attr.id="{{field.field}}">
               <kendo-grid-string-filter-cell #stringFilterElement [column]="column" [filter]="filter">
@@ -37,7 +37,7 @@
              </div>
            
             </div>
-          </ng-template>
+          </ng-template> -->
 
         </kendo-grid-column>
-</kendo-grid> -->
+</kendo-grid>

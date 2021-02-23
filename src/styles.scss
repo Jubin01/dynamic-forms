@@ -4,15 +4,32 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.vertical-tabs.mat-tab-group{
+    flex-direction: row;
+   // height: 100%;
+    .mat-tab-labels{
+        flex-direction: column;
+    }
+    .mat-ink-bar{
+        display: none;
+    }
+    .mat-tab-header{
+        border: none !important
+    }
+    .mat-tab-body-wrapper{
+        padding: 0 16px;
+        width: 100%;
+    }
+}
 
  //overide mat dialog defaults
- .mat-dialog-container {
-    max-width: 4000px !important;
-}
-// remove mat dialog max-width limit
-// .cdk-overlay-pane{
-//     max-width: none !important;
+//  .mat-dialog-container {
+//     max-width: 4000px !important;
 // }
+// remove mat dialog max-width limit
+.cdk-overlay-pane{
+    max-width: none !important;
+}
 
 .full-width {
     width: 98.3%;

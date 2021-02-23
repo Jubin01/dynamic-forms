@@ -12,13 +12,15 @@ import { GridModule } from '@progress/kendo-angular-grid';
 import { DialogsModule, WindowModule } from '@progress/kendo-angular-dialog';
 import { LookupGridDataService2 } from './shared/lookup-2/lookup-grid/data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { TabbedAddComponent } from './tabbed-add/tabbed-add.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddComponent
+    AddComponent,
+    TabbedAddComponent
 
   ],
   imports: [
@@ -27,10 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
-    MaterialModule,
-    GridModule,
-    WindowModule,
-    DialogsModule
+    MaterialModule
   ],
   bootstrap: [AppComponent],
   providers: [ LookupGridDataService2],

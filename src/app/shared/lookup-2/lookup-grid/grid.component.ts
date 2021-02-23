@@ -11,8 +11,8 @@ import { Subscription } from 'rxjs';
  // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LookupGridComponent2 implements OnInit, AfterViewInit, OnDestroy {
-  @ViewChild('filterElement') filterElement: ElementRef;
-  @ViewChild('stringFilterElement') stringFilterElement: ElementRef;
+  //@ViewChild('filterElement') filterElement: ElementRef;
+  //@ViewChild('stringFilterElement') stringFilterElement: ElementRef;
   @Input() lookupModel: Lookup;
   @Output() selectedData: EventEmitter<any> = new EventEmitter<any>();
   @Output() gridRowDblClick: EventEmitter<any> = new EventEmitter<any>();
@@ -42,10 +42,10 @@ export class LookupGridComponent2 implements OnInit, AfterViewInit, OnDestroy {
   ngAfterViewInit() {
     //  this.filterElement.nativeElement.children[0].children[0].children[0].children[0].focus();
     //    this.stringFilterElement.nativeElement.focus();
-      setTimeout(() => {
-    this.filterElement.nativeElement.querySelector("input").focus();
-   // this.cd.markForCheck();
-     }, 0);
+  //     setTimeout(() => {
+  //   this.filterElement.nativeElement.querySelector("input").focus();
+  //  // this.cd.markForCheck();
+  //    }, 0);
   }
 
   ngOnInit() {
