@@ -2,7 +2,7 @@ import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, ViewChild, E
 import { LookupGridDataService2 } from './data.service';
 import { GridDataResult, DataStateChangeEvent } from '@progress/kendo-angular-grid';
 import { DataSourceRequestState, GroupDescriptor } from '@progress/kendo-data-query';
-import { Lookup } from 'src/app/models/lookup';
+import { Lookup } from '../../../../app/models/lookup';
 import { Subscription } from 'rxjs';
 
 @Component({

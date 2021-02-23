@@ -3,7 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Subscription, Subject } from 'rxjs';
 import { LookupGridDataService2 } from './lookup-grid/data.service';
 import { MatDialog } from '@angular/material/dialog';
-import { Lookup } from 'src/app/models/lookup';
+import { Lookup } from '../../../app/models/lookup';
 
 @Component({
     selector: 'app-lookup-2',
