@@ -29,6 +29,8 @@ import { TabbedAddComponent } from './tabbed-add/tabbed-add.component';
     SharedModule,
     MaterialModule
   ],
+  entryComponents: [ AddComponent,
+    TabbedAddComponent],
   bootstrap: [AppComponent],
   providers: [ LookupGridDataService2],
 
