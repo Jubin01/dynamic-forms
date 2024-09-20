@@ -2,7 +2,7 @@
 
 Dynamic From Setup
 
-note : images are missing in this document.
+note : images are missing in this document. refer word document in docx format at root of project for documentation with images.
 
 This document gives information on how to implement the shared dynamic forms in your page.
 
